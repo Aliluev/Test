@@ -72,7 +72,7 @@ template <class T>
 T TStackList<T>::Get()
 {
   if (pListLen == 0)
-    exception.except_throw(103);
+    throw "-1";;
   T A;
   if (pListLen == 1)
   {
