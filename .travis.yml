@@ -8,6 +8,6 @@ before_script:
 script:
   - cmake ../Test
   - make -j
-  - ./text_editor_test
+  - ./text_editor_test/text_editor_test
 notifications:
   email: false
