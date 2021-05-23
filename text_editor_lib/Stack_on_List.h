@@ -1,7 +1,7 @@
 #pragma once
 #include "List_Item.h"
 #include <iostream>
-#include "Exception_class.h"
+//#include "Exception_class.h"
 
 template <class T>
 class TStackList
@@ -9,7 +9,7 @@ class TStackList
 protected:
   TDatLink<T>* pLastItem;
   int pListLen;
-  Exceptions_from_stack_queue_multystack exception;
+ // Exceptions_from_stack_queue_multystack exception;
 public:
   TStackList();
   ~TStackList();
