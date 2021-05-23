@@ -19,6 +19,8 @@ add_subdirectory(time_check)
 add_subdirectory(text_editor) #Собираем проект в поддиректории vector
 add_subdirectory(text_editor_lib) #Собираем проект в поддиректории lib
 add_subdirectory(text_editor_test)
+add_subdirectory(gtest)
+
 
 
 #file(GLOB hdrs "*.h*") #Добавляем в переменную hdrs все файлы с расширением .h
