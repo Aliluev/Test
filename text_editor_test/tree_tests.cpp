@@ -132,19 +132,6 @@ TEST(tree, can_add_word_to_tree_correct)
   EXPECT_EQ(word1.GetSameLevel()->GetNextLevel()->GetSameLevel()->GetLetter(), 'o');
 }
 
-TEST(tree, can_convert_tree_to_string)
-{
-  TTree word1("hello");
-  TTree text1(0);
-  TTree string(1);
-  string.SetNextLevel(&word1);
-  text1.SetNextLevel(&string);
-  //EXPECT_EQ(text1.ToString()[0], 'h');
-  EXPECT_EQ(text1.ToString()[1], 'e');
-  EXPECT_EQ(text1.ToString()[2], 'l');
-  EXPECT_EQ(text1.ToString()[3], 'l');
-  EXPECT_EQ(text1.ToString()[4], 'o');
-}
 
 TEST(tree, can_create_copy_of_tree)
 {
