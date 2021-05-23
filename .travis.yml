@@ -1,0 +1,13 @@
+language: cpp
+compiler:
+  - gcc
+  - clang
+before_script:
+  - mkdir ../build
+  - cd ../build
+script:
+  - cmake ../Test
+  - make -j
+  - ./text_editor_test/text_editor_test
+notifications:
+  email: false
