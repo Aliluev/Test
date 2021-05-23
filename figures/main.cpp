@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Point.h"
+#include 'Point.h'
 #include "Circle.h"
 #include "Line.h"
 #include "Triangle.h"
@@ -11,23 +11,23 @@ int main()
 {
   setlocale(LC_ALL, "RUS");
   double x = 0, y = 0;
-  cout << "Ââåäèòå êîîðäèíàòû òî÷êè 1:\n";
+  cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ ÃªÃ®Ã®Ã°Ã¤Ã¨Ã­Ã Ã²Ã» Ã²Ã®Ã·ÃªÃ¨ 1:\n";
   cin >> x >> y;
   double x1, y1;
-  cout << "Ââåäèòå êîîðäèíàòû òî÷êè 2:\n";
+  cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ ÃªÃ®Ã®Ã°Ã¤Ã¨Ã­Ã Ã²Ã» Ã²Ã®Ã·ÃªÃ¨ 2:\n";
   cin >> x1 >> y1;
   TPoint point1(x, y), point2(x1, y1);
   if (point1 == point2)
-    cout << "Òî÷êè ñîâïàäàþò\n";
+    cout << "Ã’Ã®Ã·ÃªÃ¨ Ã±Ã®Ã¢Ã¯Ã Ã¤Ã Ã¾Ã²\n";
   else
-    cout << "Òî÷êè íå ñîâïàäàþò\n";
+    cout << "Ã’Ã®Ã·ÃªÃ¨ Ã­Ã¥ Ã±Ã®Ã¢Ã¯Ã Ã¤Ã Ã¾Ã²\n";
   double x2, y2;
-  cout << "Ââåäèòå êîîäèíàòû åùå îäíîé òî÷êè:\n";
+  cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ ÃªÃ®Ã®Ã¤Ã¨Ã­Ã Ã²Ã» Ã¥Ã¹Ã¥ Ã®Ã¤Ã­Ã®Ã© Ã²Ã®Ã·ÃªÃ¨:\n";
   cin >> x2 >> y2;
   TPlex pl(&point1, &point2);
   TPoint p(x2, y2);
   TPlex plex(&pl, &p);
-  cout << "Ëîìàíàÿ êðèâàÿ ñ êîîðäèíàòàìè:\n";
+  cout << "Ã‹Ã®Ã¬Ã Ã­Ã Ã¿ ÃªÃ°Ã¨Ã¢Ã Ã¿ Ã± ÃªÃ®Ã®Ã°Ã¤Ã¨Ã­Ã Ã²Ã Ã¬Ã¨:\n";
   plex.Show();
   return 0;
 }
