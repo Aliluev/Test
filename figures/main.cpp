@@ -1,5 +1,5 @@
 #include <iostream>
-#include 'Point.h'
+#include <Point.h>
 #include "Circle.h"
 #include "Line.h"
 #include "Triangle.h"
